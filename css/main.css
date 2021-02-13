@@ -891,12 +891,17 @@ footer {
 }
 
 .footer-join {
-  margin-left: 70px;
-  width: 206px;
+  text-align: center;
   height: 80px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-join {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-title {
@@ -906,6 +911,7 @@ footer {
   line-height: 1.14;
   font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 0.03em;
   line-height: 16px;
   color: #ffffff;
