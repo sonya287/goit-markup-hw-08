@@ -283,7 +283,6 @@ body {
   background-color: #ffffff;
   color: #212121;
   font-family: Roboto;
-  padding-top: 70px;
 }
 
 body.modal-open {
@@ -1831,7 +1830,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin: 0px;
+  padding-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -1873,21 +1872,19 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-  .team__list:not(:last-child) {
+  .team__list {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .team__list:not(:last-child) {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+  .team__list {
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .team__list:not(:last-child) {
+  .team__list {
     -ms-flex-preferred-size: calc((100% - 120px) / 4);
         flex-basis: calc((100% - 120px) / 4);
     padding-bottom: 30px;

@@ -13,7 +13,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin: 0px;
+  padding-top: 30px;
   margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
@@ -43,13 +43,13 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team__list:not(:last-child) {
+.team__list {
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 60px) / 2);
+    //flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
   }
 
