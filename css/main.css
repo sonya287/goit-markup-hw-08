@@ -891,7 +891,6 @@ footer {
 }
 
 .footer-join {
-  text-align: center;
   height: 80px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -901,6 +900,14 @@ footer {
 @media screen and (max-width: 767px) {
   .footer-join {
     margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-join {
+    margin-left: 50px;
+    text-align: center;
   }
 }
 
@@ -1852,14 +1859,14 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 1200px) {
   .team-title {
     margin-bottom: 50px;
     font-size: 36px;
+    line-height: 1.17;
   }
 }
 

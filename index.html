@@ -32,54 +32,86 @@
               <a class="header__link" href="#address">Контакты</a>
             </li>
           </ul>
-          
-<div class="main-nav__menu" id="main-nav__menu" data-menu>
-  <div class="menu-navigation">
-    <ul class="menu-navigation__list">
-      <li class="menu-navigation__item"><a href="./index.html"
-          class="menu-navigation__link menu-navigation__link--current">Студия</a></li>
-      <li class="menu-navigation__item"><a href="./portfolio.html" class="menu-navigation__link">Портфолио</a></li>
-      <li class="menu-navigation__item"><a href="./contacts.html" class="menu-navigation__link">Контакты</a></li>
-    </ul>
-  </div>
-  <div class="menu-contacts">
-    <ul class="menu-contacts__list">
-      <li class="menu-contacts__item menu-contacts__item--tel">
-        <a href="tel:+380961111111" class="menu-contacts__link menu-contacts__link--tel">
-          <span>+38 096 111 11 11</span>
-        </a>
-      </li>
-      <li class="menu-contacts__item menu-contacts__item--mail">
-        <a href="mailto:info@devstudio.com" class="menu-contacts__link menu-contacts__link--mail">
-          <span>info@devstudio.com</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="networks-menu">
-    <ul class="networks-menu__list">
-      <li class="networks-menu__item">
-        <a href="#" class="networks-menu__link">Instagram</a>
-      </li>
-      <li class="networks-menu__item">
-        <a href="#" class="networks-menu__link">Twitter</a>
-      </li>
-      <li class="networks-menu__item">
-        <a href="#" class="networks-menu__link">Facebook</a>
-      </li>
-      <li class="networks-menu__item">
-        <a href="#" class="networks-menu__link">LinkedIn</a>
-      </li>
-    </ul>
-  </div>
-</div>
-<button type="button" class="main-nav__button" aria-expanded="false" aria-controls="main-nav__menu" data-menu-button>
-  <svg class="main-nav__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-    <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
-    <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
-  </svg>
-</button>
 
+          <div class="main-nav__menu" id="main-nav__menu" data-menu>
+            <div class="menu-navigation">
+              <ul class="menu-navigation__list">
+                <li class="menu-navigation__item">
+                  <a
+                    href="./index.html"
+                    class="menu-navigation__link menu-navigation__link--current"
+                    >Студия</a
+                  >
+                </li>
+                <li class="menu-navigation__item">
+                  <a href="./portfolio.html" class="menu-navigation__link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="menu-navigation__item">
+                  <a href="./contacts.html" class="menu-navigation__link"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="menu-contacts">
+              <ul class="menu-contacts__list">
+                <li class="menu-contacts__item menu-contacts__item--tel">
+                  <a
+                    href="tel:+380961111111"
+                    class="menu-contacts__link menu-contacts__link--tel"
+                  >
+                    <span>+38 096 111 11 11</span>
+                  </a>
+                </li>
+                <li class="menu-contacts__item menu-contacts__item--mail">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="menu-contacts__link menu-contacts__link--mail"
+                  >
+                    <span>info@devstudio.com</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="networks-menu">
+              <ul class="networks-menu__list">
+                <li class="networks-menu__item">
+                  <a href="#" class="networks-menu__link">Instagram</a>
+                </li>
+                <li class="networks-menu__item">
+                  <a href="#" class="networks-menu__link">Twitter</a>
+                </li>
+                <li class="networks-menu__item">
+                  <a href="#" class="networks-menu__link">Facebook</a>
+                </li>
+                <li class="networks-menu__item">
+                  <a href="#" class="networks-menu__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="main-nav__button"
+            aria-expanded="false"
+            aria-controls="main-nav__menu"
+            data-menu-button
+          >
+            <svg
+              class="main-nav__icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+              <use
+                class="icon-close"
+                href="./images/sprite.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
         </nav>
 
         <ul class="info-link">
@@ -184,13 +216,28 @@
           <ul class="engage-picture">
             <li class="engage--item">
               <div class="description-block">
-                 <img
-                  class="image-block"
-                  src="./images/blok-shema.jpg"
-                  alt="блок-схема"
-                  height="294"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/blok-shema@x1.webp 1x,
+                      ./images/blok-shema@x2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    class="image-block"
+                    srcset="
+                      ./images/blok-shema@x1.jpg 1x,
+                      ./images/blok-shema@x2.jpg 2x
+                    "
+                    src="./images/blok-shema.jpg"
+                    alt="блок-схема"
+                    height="294"
+                    width="370"
+                  />
+                </picture>
+
                 <div class="description__text">
                   <h3 class="description__label">Десктопные приложения</h3>
                 </div>
@@ -199,13 +246,28 @@
 
             <li class="engage--item">
               <div class="description-block">
-                <img
-                  class="image-block"
-                  src="./images/smartfon.jpg"
-                  alt="смартфон"
-                  height="294"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/smartfon@x1.webp 1x,
+                      ./images/smartfon@x2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    class="image-block"
+                    srcset="
+                      ./images/smartfon@x1.jpg 1x,
+                      ./images/smartfon@x2.jpg 2x
+                    "
+                    src="./images/smartfon.jpg"
+                    alt="смартфон"
+                    height="294"
+                    width="370"
+                  />
+                </picture>
+
                 <div class="description__text">
                   <h3 class="description__label">Мобильные приложения</h3>
                 </div>
@@ -213,13 +275,27 @@
             </li>
             <li class="engage--item">
               <div class="description-block">
-                <img
-                  class="image-block"
-                  src="./images/palitra.jpg"
-                  alt="палитра"
-                  height="294"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/palitra@x1.webp 1x,
+                      ./images/palitra@x2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    class="image-block"
+                    srcset="
+                      ./images/palitra@x1.jpg 1x,
+                      ./images/palitra@x2.jpg 2x
+                    "
+                    src="./images/palitra.jpg"
+                    alt="палитра"
+                    height="294"
+                    width="370"
+                  />
+                </picture>
                 <div class="description__text">
                   <h3 class="description__label">Дизайнерские решения</h3>
                 </div>
@@ -461,67 +537,71 @@
       <div class="container">
         <div class="footer-container">
           <div class="tablet-footer">
-          <div class="footer-address">
-            <a class="footer-logo" href="#">
-              <span class="logo--text">Web</span>Studio</a
-            >
-            <address>
-              <a href="#"
-                ><p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-              </a>
-            </address>
-            <a class="address__link--footer" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-            <a class="address__link--footer" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </div>
+            <div class="footer-address">
+              <a class="footer-logo" href="#">
+                <span class="logo--text">Web</span>Studio</a
+              >
+              <address>
+                <a href="#"
+                  ><p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+                </a>
+              </address>
+              <a class="address__link--footer" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              <a class="address__link--footer" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </div>
 
-          <!-- Присоединяйтесь-->
-          <div class="footer-join">
-            <p class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</p>
-            <ul class="footer__block">
-              <li class="footer__social-item">
-                <a href="#" class="footer__link">
-                  <svg class="footer__icon">
-                    <use href="./images/sprite.svg#icon-instagram-two"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a href="#" class="footer__link">
-                  <svg class="footer__icon">
-                    <use href="./images/sprite.svg#icon-twitter-two"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a href="#" class="footer__link">
-                  <svg class="footer__icon">
-                    <use href="./images/sprite.svg#icon-facebook-two"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a href="#" class="footer__link">
-                  <svg class="footer__icon">
-                    <use href="./images/sprite.svg#icon-linkedin-two"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+            <!-- Присоединяйтесь-->
+            <div class="footer-join">
+              <p class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</p>
+              <ul class="footer__block">
+                <li class="footer__social-item">
+                  <a href="#" class="footer__link">
+                    <svg class="footer__icon">
+                      <use href="./images/sprite.svg#icon-instagram-two"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__link">
+                    <svg class="footer__icon">
+                      <use href="./images/sprite.svg#icon-twitter-two"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__link">
+                    <svg class="footer__icon">
+                      <use href="./images/sprite.svg#icon-facebook-two"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__link">
+                    <svg class="footer__icon">
+                      <use href="./images/sprite.svg#icon-linkedin-two"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <!-- Подписаться -->
           <div class="footer-subscribe">
-            <p class="footer-title">
-              ПОДПИШИТЕСЬ НА РАССЫЛКУ
-            </p>
+            <p class="footer-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
             <form class="subscribe-form">
-              <input class="subscribe-input" type="email" name="mail" id="form-mail" placeholder="E-mail" />
-          
+              <input
+                class="subscribe-input"
+                type="email"
+                name="mail"
+                id="form-mail"
+                placeholder="E-mail"
+              />
+
               <button class="button__subscribe" type="submit">
                 Подписаться
                 <svg class="button__icon" width="24" height="24">

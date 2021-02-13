@@ -88,12 +88,18 @@ footer {
 .footer-join {
   //margin-left: 70px;
   //width: 206px;
-  text-align: center;
+
   height: 80px;
   justify-content: space-between;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 50px;
+    text-align: center;
   }
 }
 
