@@ -729,8 +729,8 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .features__list {
-    -ms-flex-preferred-size: calc((100% - 120px) / 4);
-        flex-basis: calc((100% - 120px) / 4);
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
 }
 
@@ -904,7 +904,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer-join {
     margin-left: 50px;
     text-align: center;
@@ -1470,8 +1470,6 @@ header {
 }
 
 .clients-list__item {
-  -ms-flex-preferred-size: calc((100% - 60px) / 2);
-      flex-basis: calc((100% - 60px) / 2);
   margin: 15px;
   height: 90px;
 }
@@ -1493,19 +1491,28 @@ header {
 .clients__logo {
   margin: 0px;
   padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .clients__logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__logo {
+    margin-top: 50px;
   }
 }
 
@@ -1844,6 +1851,8 @@ header {
 
 .team-container {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1870,6 +1879,12 @@ header {
   }
 }
 
+.img-block {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .team-block {
   margin: 0px;
   padding: 0px;
@@ -1890,7 +1905,7 @@ header {
 }
 
 .team__list {
-  padding: 0px;
+  padding-bottom: 24px;
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1934,15 +1949,19 @@ header {
   line-height: 1.18;
   color: #757575;
   margin: 0px;
-  padding: 10px 0px 30px 0px;
+  padding-top: 10px;
   text-align: center;
 }
 
 .social-block {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0px 10px 30px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social__link {
