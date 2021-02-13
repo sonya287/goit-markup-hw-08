@@ -21,7 +21,98 @@
             <span class="logo--text">Web</span>Studio</a
           >
 
+          <!-- <button
+            class="main-nav__button"
+            aria-expanded="false"
+            aria-controls="main-nav__menu"
+            data-menu-button
+          >
+            <svg
+              class="main-nav__icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+              <use
+                class="icon-close"
+                href="./images/sprite.svg#icon-close"
+              ></use>
+            </svg>
+          </button>-->
+
+          <ul class="header-nav">
+            <li class="header__list">
+              <a class="header__current" href="./index.html">Студия</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header__list">
+              <a class="header__link" href="#address">Контакты</a>
+            </li>
+          </ul>
+          <div class="main-nav__menu" id="main-nav__menu" data-menu>
+            <div class="menu-navigation">
+              <ul class="menu-navigation__list">
+                <li class="menu-navigation__item">
+                  <a
+                    href="./index.html"
+                    class="menu-navigation__link menu-navigation__link--current"
+                    >Студия</a
+                  >
+                </li>
+                <li class="menu-navigation__item">
+                  <a href="./portfolio.html" class="menu-navigation__link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="menu-navigation__item">
+                  <a href="./contacts.html" class="menu-navigation__link"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="menu-contacts">
+              <ul class="menu-contacts__list">
+                <li class="menu-contacts__item menu-contacts__item--tel">
+                  <a
+                    href="tel:+380961111111"
+                    class="menu-contacts__link menu-contacts__link--tel"
+                  >
+                    <span>+38 096 111 11 11</span>
+                  </a>
+                </li>
+                <li class="menu-contacts__item menu-contacts__item--mail">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="menu-contacts__link menu-contacts__link--mail"
+                  >
+                    <span>info@devstudio.com</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="networks-menu">
+              <ul class="networks-menu__list">
+                <li class="networks-menu__item">
+                  <a href="#" class="networks-menu__link">Instagram</a>
+                </li>
+                <li class="networks-menu__item">
+                  <a href="#" class="networks-menu__link">Twitter</a>
+                </li>
+                <li class="networks-menu__item">
+                  <a href="#" class="networks-menu__link">Facebook</a>
+                </li>
+                <li class="networks-menu__item">
+                  <a href="#" class="networks-menu__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <button
+            type="button"
             class="main-nav__button"
             aria-expanded="false"
             aria-controls="main-nav__menu"
@@ -40,18 +131,6 @@
               ></use>
             </svg>
           </button>
-
-          <ul class="header-nav">
-            <li class="header__list">
-              <a class="header__current" href="./index.html">Студия</a>
-            </li>
-            <li class="header__list">
-              <a class="header__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="header__list">
-              <a class="header__link" href="#address">Контакты</a>
-            </li>
-          </ul>
         </nav>
 
         <ul class="info-link">
@@ -391,5 +470,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
