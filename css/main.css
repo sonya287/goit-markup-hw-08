@@ -715,13 +715,13 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
-  .features__list:not(:last-child) {
+  .features__list {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .features__list:not(:last-child) {
+  .features__list {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
@@ -729,7 +729,7 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
-  .features__list:not(:last-child) {
+  .features__list {
     -ms-flex-preferred-size: calc((100% - 120px) / 4);
         flex-basis: calc((100% - 120px) / 4);
   }
@@ -1396,7 +1396,7 @@ header {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  margin: 0px;
+  margin-bottom: 30px;
 }
 
 .hero__button {
@@ -1410,7 +1410,6 @@ header {
   font-weight: bold;
   border-style: none;
   text-align: center;
-  margin: 30px 250px;
   font-family: Roboto;
   outline: transparent;
   color: #ffffff;
