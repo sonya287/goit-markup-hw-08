@@ -343,7 +343,6 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .portfolio {
-    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
@@ -1275,7 +1274,8 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 9px;
+    margin-left: 9px;
+    margin-right: 9px;
     color: #757575;
     font-weight: 500;
     font-size: 15px;
@@ -1468,7 +1468,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin: 0px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1516,6 +1516,7 @@ header {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 

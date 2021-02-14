@@ -1,6 +1,7 @@
 .clients-container {
   padding-top: 60px;
   padding-bottom: 60px;
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -13,7 +14,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $primary-text-color;
-  margin: 0px;
+  margin-bottom: 50px;
   //padding: 0px 0px 50px;
 
   @media screen and (min-width: 1200px) {
@@ -37,9 +38,6 @@
 }
 
 .clients__logo {
-  //display: inline-flex;
-  // margin: 0px;
-  //padding: 0px;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -48,7 +46,7 @@
   @media screen and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
-    //margin: -15px;
+    margin: -15px;
   }
 
   margin-top: 30px;
