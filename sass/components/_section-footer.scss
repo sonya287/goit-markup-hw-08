@@ -114,6 +114,10 @@ footer {
   letter-spacing: 0.03em;
   line-height: 16px;
   color: #ffffff;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__block {

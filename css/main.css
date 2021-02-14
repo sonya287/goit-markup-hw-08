@@ -448,6 +448,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .card__li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .card-block > .card__li {
   width: 100%;
 }
@@ -925,6 +931,12 @@ footer {
   letter-spacing: 0.03em;
   line-height: 16px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-title {
+    text-align: center;
+  }
 }
 
 .footer__block {

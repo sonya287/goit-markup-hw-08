@@ -20,6 +20,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .card__li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .card-block > .card__li {
   width: 100%;
   //margin: 15px;
