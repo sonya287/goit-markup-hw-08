@@ -431,6 +431,9 @@ ul {
 .card-block {
   padding: 0;
   margin: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   list-style: none;
   font-style: normal;
 }
@@ -447,8 +450,7 @@ ul {
 }
 
 .card-block > .card__li {
-  width: 370px;
-  margin: 15px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1481,6 +1483,7 @@ header {
 .clients-list__item {
   margin: 15px;
   height: 90px;
+  width: 208px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1527,17 +1530,16 @@ header {
 }
 
 .clients__link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
-  height: 90px;
   fill: #afb1b8;
   border-radius: 4px;
   border: solid 1px #afb1b8;
