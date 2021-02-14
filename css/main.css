@@ -734,8 +734,8 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .features__list {
-    -ms-flex-preferred-size: calc((100% - 90px) / 4);
-        flex-basis: calc((100% - 90px) / 4);
+    -ms-flex-preferred-size: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 120px) / 4);
   }
 }
 
@@ -1925,6 +1925,8 @@ header {
 
 @media screen and (min-width: 768px) {
   .team__list {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
